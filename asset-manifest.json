@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "localhost/static/css/main.c99d0de7.css",
+    "main.js": "localhost/static/js/main.36af0438.js",
+    "static/js/787.857ec540.chunk.js": "localhost/static/js/787.857ec540.chunk.js",
+    "static/media/magic-wand.svg": "localhost/static/media/magic-wand.e72c90da1685bcf582f4ba035fc8f114.svg",
+    "index.html": "localhost/index.html",
+    "main.c99d0de7.css.map": "localhost/static/css/main.c99d0de7.css.map",
+    "main.36af0438.js.map": "localhost/static/js/main.36af0438.js.map",
+    "787.857ec540.chunk.js.map": "localhost/static/js/787.857ec540.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c99d0de7.css",
+    "static/js/main.36af0438.js"
+  ]
+}
