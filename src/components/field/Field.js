@@ -21,12 +21,13 @@ export default function Field(props) {
             const key = (index + 1).toString();
             return (
                 <div
-                    key={key}
-                    className={
-                        `field__option 
+                key={key}
+                className={
+                `field__option 
                 ${answers.includes(key) ? 'field__option_answer' : ''} 
                 ${chosen.includes(key) ? 'field__option_chosen' : ''} 
-                ${matches.includes(key) && props.checkFlag ? 'field__option_correct' : ''}`}>
+                ${matches.includes(key) && props.checkFlag ? 'field__option_correct' : ''}`}
+                onClick={() => onChoose(key)}>
                     {key}
                 </div>
             );
@@ -41,29 +42,26 @@ export default function Field(props) {
         getResult(answersArr);
     }
 
-    const onChoose = (event) => {
-        if (!event.target.classList.contains('field__option') || props.genFlag) {
+    const onChoose = (key) => {
+        if (props.genFlag) {
             return;
         }
-        if (!event.target.isChosen) {
+        if (!chosen.includes(key)) {
             if (chosen.length === props.chooseLimit) {
+                console.log(chosen);
                 props.onWarning(props.fieldOrder);
                 return;
             }
             if (chosen.length === props.chooseLimit - 1) {
                 props.onDone();
             }
-            event.target.isChosen = true;
-            event.target.classList.add('field__option_chosen');
-            setChosen(prevState => [...prevState, event.target.textContent]);
+            setChosen(prevState => [...prevState, key]);
 
         } else {
             if (chosen.length === props.chooseLimit) {
                 props.onUndone();
             }
-            event.target.isChosen = false;
-            event.target.classList.remove('field__option_chosen');
-            setChosen(prevState => prevState.filter(item => item !== event.target.textContent));
+            setChosen(prevState => prevState.filter(item => item !== key));
         }
     }
 
@@ -73,7 +71,7 @@ export default function Field(props) {
     }
 
     return (
-        <div className='field' onClick={props.checkFlag ? null : onChoose}>
+        <div className='field'>
             {options}
         </div>
     );
