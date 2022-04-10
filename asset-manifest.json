@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/mywish-test-react/static/css/main.c99d0de7.css",
-    "main.js": "/mywish-test-react/static/js/main.afdc16db.js",
+    "main.js": "/mywish-test-react/static/js/main.fc025827.js",
     "static/js/787.857ec540.chunk.js": "/mywish-test-react/static/js/787.857ec540.chunk.js",
     "static/media/magic-wand.svg": "/mywish-test-react/static/media/magic-wand.e72c90da1685bcf582f4ba035fc8f114.svg",
     "index.html": "/mywish-test-react/index.html",
     "main.c99d0de7.css.map": "/mywish-test-react/static/css/main.c99d0de7.css.map",
-    "main.afdc16db.js.map": "/mywish-test-react/static/js/main.afdc16db.js.map",
+    "main.fc025827.js.map": "/mywish-test-react/static/js/main.fc025827.js.map",
     "787.857ec540.chunk.js.map": "/mywish-test-react/static/js/787.857ec540.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c99d0de7.css",
-    "static/js/main.afdc16db.js"
+    "static/js/main.fc025827.js"
   ]
 }
