@@ -1,0 +1,41 @@
+.field {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.field__option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+.field__option:hover:not(.field__option_chosen) {
+  background-color: #DDDDDD;
+}
+.field__option_chosen {
+  width: 39px;
+  height: 39px;
+  border: 4px solid #FFFFFF;
+  border-radius: 8px;
+  background-color: #FFD205;
+}
+.field__option_answer {
+  border-bottom: 4px solid #5a49e8;
+  border-right: 4px solid #5a49e8;
+  border-radius: 5px;
+}
+.field__option_correct {
+  border-bottom: 4px solid #53d000;
+  border-right: 4px solid #53d000;
+  background-color: #53d000;
+}
+
+/*# sourceMappingURL=Field.css.map */

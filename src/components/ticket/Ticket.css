@@ -1,0 +1,68 @@
+.ticket {
+  width: 296px;
+  padding: 14px 11px 24px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+}
+.ticket__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.ticket__field {
+  margin-top: 12px;
+}
+.ticket__field-name {
+  font-weight: 700;
+  padding-left: 5px;
+  margin-right: 8px;
+}
+.ticket__field-task {
+  transition: 0.3s linear;
+}
+.ticket__field-task_warning {
+  transition: 0.1s linear;
+  color: #ff0004;
+}
+.ticket__result-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 178px;
+  height: 43px;
+  border: 1px solid #a9a9a9;
+  border-radius: 40px;
+  margin: 23px auto 0;
+  opacity: 0.64;
+  transition: 0.1s linear;
+}
+.ticket__result-button:hover:not(.ticket__result-button_win):not(.ticket__result-button_lose):not(.ticket__result-button_disabled) {
+  background-color: #a9a9a9;
+  cursor: pointer;
+}
+.ticket__result-button_win {
+  color: #409f01;
+  border-color: #53d000;
+}
+.ticket__result-button_lose {
+  color: #930000;
+  border-color: #e80000;
+}
+.ticket__result-button_disabled {
+  opacity: 0.4;
+}
+.ticket__magic-wand {
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+.ticket__magic-wand_disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/*# sourceMappingURL=Ticket.css.map */

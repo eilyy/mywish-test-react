@@ -1,0 +1,8 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #4568DC 0%, #B06AB3 100%), #EF8E48;
+  height: 100vh;
+  min-height: 380px;
+}
